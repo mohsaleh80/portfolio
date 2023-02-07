@@ -6,7 +6,7 @@ urlpatterns = [
    
     path('', views.Home),
     path('home/', views.Home),
-    path('profile/', views.About),
+    path('profile/', views.Profile),
     path('about/', views.About),
     path('contact/', views.Contact),
     
