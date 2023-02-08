@@ -4,22 +4,22 @@ from django.http   import HttpResponse
 
 
 def Home(request):
-    #data = "This is Employee Home Admin Page..."
+    context = {"Slogan":"This is  Employee Home Page..."} 
     #return HttpResponse(data)
-    return render(request,'employee/index.html')
+    return render(request,'employee/index.html',context)
     
 
 def Profile(request):
-   # data = "This is Employee Profile Admin Page..."
+    context = {"Slogan":"This is Profile Employee Page..."} 
    # return HttpResponse(data)
-    return render(request,'employee/profile.html')
+    return render(request,'employee/profile.html',context)
 
 def About(request):
-    #data = "This is Employee About Admin Page..."
+    context = {"Slogan":"This is About Employee  Page..."} 
     #return HttpResponse(data)
-    return render(request,'employee/about.html')
+    return render(request,'employee/about.html',context)
 
 def Contact(request):
-    # data= "This is Employee Contact Admin Page..."
+    context = {"Slogan":"This is Employee Contact Page..."} 
     #return HttpResponse(data)
-    return render(request,'employee/contact.html')
+    return render(request,'employee/contact.html',context)

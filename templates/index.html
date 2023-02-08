@@ -1,12 +1,26 @@
 
 {% extends 'layout.html' %}
 
+{% block title %}
+ Portfolio Home Page
+{% endblock %}
+
 {% block content %}
+
+  {% include './partials/slider.html' %}
 
 <!-- Bootstrap 5 jumbotron-->
 <div class="container-fluid py-5 text-center bg-light">
     <h1 class="display-5 fw-bold">Home Page</h1>
-    
+    {{Slogan}}
+  </div>
+
+  <div>
+    <ul class="list">
+      {% for service in Services %}
+         <li class="list-item">{{service}}</li>
+      {% endfor %}
+    </ul>
   </div>
 
 {% endblock %}
